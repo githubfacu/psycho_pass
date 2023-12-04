@@ -34,6 +34,4 @@ const Favs = () => {
   )
 }
 
-window.addEventListener('load', Favs)
-
 export default Favs
