@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import Swal from "sweetalert2"
 
 
@@ -34,7 +34,7 @@ const Card = ({ name, username, id }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         localStorage.removeItem(`user${id}`)
-        location.reload('/')
+        location.reload('')
       }
     })
   }
