@@ -5,8 +5,6 @@ import Swal from "sweetalert2"
 
 const Card = ({ name, username, id }) => {
 
-  const navigate = useNavigate()
-
   const image = ['../../images/anime-0.webp', '../../images/anime-1.webp','../../images/anime-3.png', '../../images/anime-4.webp', '../../images/anime-6.webp', '../../images/anime-2.webp', '../../images/anime-5.webp', '../../images/anime-8.jpg', '../../images/anime-9.jpg','../../images/anime-7.jpg']
 
   const userPayload = {
@@ -36,7 +34,7 @@ const Card = ({ name, username, id }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         localStorage.removeItem(`user${id}`)
-        navigate(0) 
+        location.reload('/')
       }
     })
   }
