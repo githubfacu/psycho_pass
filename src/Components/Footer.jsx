@@ -8,13 +8,13 @@ const Footer = () => {
         <h5>facus - lilen</h5>      
       </div>
       <div className='icons'>
-        <a href="/" target='_blanc'>
+        <a href="" target='_blanc'>
           <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="/" target='_blanc'>
+        <a href="" target='_blanc'>
           <i class="fa-brands fa-tiktok"></i>    
         </a>
-        <a href="/" target='_blanc'>
+        <a href="" target='_blanc'>
           <i class="fa-brands fa-github"></i>
         </a>
       </div>

@@ -34,7 +34,7 @@ const Card = ({ name, username, id }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         localStorage.removeItem(`user${id}`)
-        location.replace('/')
+        location.reload()
       }
     })
   }
